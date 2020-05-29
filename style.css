@@ -1,0 +1,539 @@
+@charset "UTF-8";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+*
+navigation
+*
+*/
+
+.navigation {
+  width: 100%;
+  padding: 0.4rem 1rem 0 0;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 1;
+}
+.navigation h1 img {
+  width: 8.5rem;
+}
+.nav {
+  width: 35%;
+}
+.navigation .nav ul {
+  justify-content: space-between;
+  display: flex;
+}
+
+.navigation .nav li {
+  list-style: none;
+}
+
+.navigation .nav li a {
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.navigation .nav li a:hover {
+  text-decoration: underline;
+}
+
+/*top*/
+
+.top-bg {
+  min-height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.fixed-bg-content {
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fixed-bg-content01 {
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fixed-bg-content02 {
+  
+  padding-top: 60px;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fixed-bg-content02 p span {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+/*見出し画像の固定*/
+
+.bg01 {
+  background-image: url(img/coffee-shop.jpg);
+}
+.bg02 {
+  background-image: url(img/coffee.jpg);
+}
+.bg03 {
+  background-image: url(img/drip.jpg);
+}
+.bg04 {
+  background-image: url(img/cup.jpg);
+}
+
+/*各ページトップの画像設定*/
+
+.head-bg {
+  min-height: 55vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+
+#page-top a:hover {
+  text-decoration: none;
+  background: #999;
+}
+
+/*content*/
+
+.content {
+  width: 80%;
+  margin: 10rem auto;
+}
+
+.top-content {
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.content-btn {
+  margin: 1.2rem;
+}
+
+.content-btn a {
+  position: relative;
+  display: inline-block;
+  color: #1B1B1B;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.content-btn a:hover {
+  text-decoration: none;
+}
+
+.content-btn a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 135%;
+  height: 2px;
+  background: #333;
+  transform: scale(0.5, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+.content-btn a:hover::after {
+  transform: scale(1, 1);
+}
+.concept {
+  line-height: 1.9rem;
+}
+.shop-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.data {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.map {
+  display: inline-block;
+  width: 50%;
+  height: 30%;
+}
+
+.map img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+
+.inclu {
+  width: 80%;
+  margin: 5rem auto 1rem;
+}
+
+.newsList li {
+  list-style: none;
+}
+
+.newsimg {
+  width: 20%;
+  height: 9rem;
+}
+
+.newsimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newsList a {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  text-decoration: none;
+  border-bottom: solid 1px #000;
+  border-radius: 2px;
+  color: #000;
+}
+
+.newsList a:hover {
+  opacity: 0.8;
+}
+
+.newsList li p {
+  word-break: break-all;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.date {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.newsdate {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #666;
+}
+
+.category {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.newsList .newstxt {
+  width: 80%;
+  padding-left: 1rem;
+}
+
+.list {
+  text-align: left;
+  margin: 5rem 0 2rem;
+  border-top: 1px solid #000;
+}
+
+/*ページ遷移のボタン*/
+
+ul.pageNav {
+  margin: 1rem;
+  padding: 10px 10px 5px;
+  background: #fff;
+  text-align: center;
+}
+
+ul.pageNav li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+}
+
+ul.pageNav li span, ul.pageNav li a {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px 13px;
+  border: 1px solid #0054a7;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/*
+ul.pageNav li a:nth-child(2) {
+  color: #000;
+background: #ccf;
+border-color: #00f;
+}
+*/
+
+ul.pageNav li a:hover {
+  color: #000;
+  background: #ccf;
+  border-color: #00f;
+}
+
+/*
+*
+contact
+*
+*/
+.form-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.form-text p, .form-notes p {
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+}
+.check-form {
+  margin: 2rem 0 3rem;
+  font-size: 0.9rem;
+}
+.form-content {
+  width: 60%;
+  margin: 10rem auto 0;
+}
+.item {
+  margin: 0.3rem;
+}
+
+.label p {
+  display: inline-block;
+  width: 35%;
+}
+.label p sup {
+  font-size: 0.7rem;
+  color: rgb(189, 0, 0);
+}
+.inputs {
+  vertical-align: top;
+  padding: 0.3rem;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 60%;
+}
+#contact {
+  height: 6rem;
+}
+
+.btn-area {
+  text-align: center;
+}
+.btn-area .submit {
+  font-family : inherit;
+  padding: 0.5rem 5rem;
+  background-color: #eee;
+  border: 1px solid #888;
+}
+.menu-text {
+  width: 80%;
+  margin: 10rem auto 0;
+}
+.menu-item {
+  width: 80%;
+  margin: 5rem auto 5rem;
+  text-align: center;
+}
+.menu-item h2 {
+  padding: 2rem;
+  border-bottom: 1px solid #000;
+  margin: 2rem;
+}
+.menu-item ul {
+  list-style: none;
+}
+.menu-item ul li {
+  width: 40%;
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin: 1.5rem 1rem;
+  border-bottom: 1px solid #000;
+}
+.hot {
+  padding-left: 6rem;
+  color: #a00;
+  font-weight: 600;
+}
+.price {
+  padding-left: 1rem;
+}
+
+.content h2 {
+  font-size:1.7rem;
+}
+.contentTxt {
+  padding: 2rem 0;
+}
+
+.contentTxt img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .content, .menu-text , .form-content {
+    margin: 7rem auto;
+  }
+  .menu-item {
+    margin: 4rem auto;
+  }
+  .head-bg {
+    min-height: 32vh;
+  }
+  
+  /*new.html*/
+  .inclu {
+    display: block;
+  }
+  .list {
+    width: 100%;
+  }
+  .archive {
+    width: 100%;
+    padding: 0;
+  }
+  .newsList .newstxt {
+    width: 70%;
+  }
+  .newsimg {
+    width: 30%;
+    height: 7rem;
+  }
+
+  .form-content {
+    width: 80%;
+  }
+  .label p {
+    display: block;
+  }
+  .check-form {
+    text-align: center;
+  }
+  .menu-item h2 {
+    margin: 0 0 2rem;
+  }
+  .menu-item ul {
+    text-align: center;
+  }
+  .menu-item ul li {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .head-content{
+    top: 70%;
+  }
+
+  .shop-content {
+    display: block;
+  }
+  .data {
+    display: inline-block;
+    padding-right: 2rem;
+  }
+  
+  .map {
+    display: block;
+    width: 50%;
+    height: 30%;
+  }
+  
+  .map img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}

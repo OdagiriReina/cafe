@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head body="profile">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/script.js"></script>
+  <title>Contact - CAFE ABC</title>
+</head>
+
+<body>
+  <header class="navigation">
+    <!-- header navigation -->
+    <h1><a href="index.html"><img src="img/logo.png" alt="CAFE ABC"></a></h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="news.html">News</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="head-bg bg03">
+      <div class="fixed-bg-content head-content">
+        <h2>contact</h2>
+      </div>
+    </div>
+    
+    <section class="form-content">
+        <div class="form-text">
+            <h3>カフェへのお問い合わせ・予約など</h3>
+            <p>こちらはカフェへの問い合わせ・予約に関するフォームです。</p>
+        </div>
+        <div class="form-notes">
+          <p>&#x203B;メールは実際には送信できません。</p>
+        </div>
+        <form class="check-form" method="POST" action="#" id="form">
+            <div class="item">
+                <label class="label"><p>お名前<sup class="required">&#xFF0A;</sup>
+                    <span class="name-error"></span></p>
+                <input class="inputs" type="text" id="name" required></label>
+            </div>
+            
+            <div class="item">
+                <label class="label"><p>メールアドレス<sup class="required">&#xFF0A;</sup>
+                    <span class="email-error"></span></p>
+                <input class="inputs" type="email" id="email" required></label>
+            </div>
+            
+            <div class="item">
+                <label for="subject" class="label"><p>件名</p>
+                <input class="inputs" type="text" id="subject"></label>
+            </div>
+            
+            <div class="item">
+                <label for="contact" class="label"><p>お問い合わせ内容<sup class="required">&#xFF0A;</sup>
+                    <span class="contact-error"></span></p>
+                <textarea class="inputs" id="contact" required></textarea></label>
+            </div>
+        </form>
+        
+        <div class="form-notes">
+            <p>&#x203B;確認画面は出ませんので、送信前にもう一度内容をお確かめください。</p>
+            <p>&#x203B;パソコンから確認メールをお送りしますので、拒否設定をされている場合は受信出来るように変更をお願いします。フリーメールを使われている場合は、当方からのメールが自動的に迷惑メールフォルダに振り分けられる可能性があります。お申し込みから２日以上経ちましても受付完了のメールが届かない場合は、店舗まで確認くださいませ。</p>
+        </div>
+        <div class="btn-area">
+            <input type="submit" class="submit" value="送信する" form="form">
+        </div>
+      </section>
+
+
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+  </main>
+
+
+  <!-- footer navigation -->
+  <footer>
+    <p><small>Copyright &copy;2019.OdagiriReina</small></p>
+  </footer>
+</body>
+
+</html>
